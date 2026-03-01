@@ -1,0 +1,105 @@
+<!D<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador Profesional de CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Generador de Curriculum Vitae</h1>
+
+        <form id="cvForm">
+
+            <!-- DATOS PERSONALES -->
+            <section>
+                <h2>Datos Personales</h2>
+
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" required>
+
+                <label for="profesion">Profesión / Cargo</label>
+                <input type="text" id="profesion" required>
+
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" required>
+
+                <label for="direccion">Ciudad y País</label>
+                <input type="text" id="direccion" required>
+
+                <label for="linkedin">LinkedIn (opcional)</label>
+                <input type="text" id="linkedin">
+            </section>
+
+            <!-- PERFIL PROFESIONAL -->
+            <section>
+                <h2>Perfil Profesional</h2>
+
+                <label for="perfil">Resumen Profesional</label>
+                <textarea id="perfil" rows="5" required></textarea>
+            </section>
+
+            <!-- EDUCACIÓN -->
+            <section>
+                <h2>Educación</h2>
+
+                <label for="institucion1">Institución</label>
+                <input type="text" id="institucion1">
+
+                <label for="titulo1">Título Obtenido</label>
+                <input type="text" id="titulo1">
+
+                <label for="anioEdu1">Año</label>
+                <input type="text" id="anioEdu1">
+            </section>
+
+            <!-- EXPERIENCIA -->
+            <section>
+                <h2>Experiencia Laboral</h2>
+
+                <label for="empresa1">Empresa</label>
+                <input type="text" id="empresa1">
+
+                <label for="puesto1">Puesto</label>
+                <input type="text" id="puesto1">
+
+                <label for="anioExp1">Periodo</label>
+                <input type="text" id="anioExp1">
+
+                <label for="descripcionExp1">Descripción</label>
+                <textarea id="descripcionExp1" rows="4"></textarea>
+            </section>
+
+            <!-- HABILIDADES -->
+            <section>
+                <h2>Habilidades</h2>
+
+                <label for="habilidades">Escribe tus habilidades separadas por coma</label>
+                <input type="text" id="habilidades">
+            </section>
+
+            <!-- IDIOMAS -->
+            <section>
+                <h2>Idiomas</h2>
+
+                <label for="idiomas">Ejemplo: Español (Nativo), Inglés (Intermedio)</label>
+                <input type="text" id="idiomas">
+            </section>
+
+            <button type="submit">Generar PDF</button>
+
+        </form>
+    </div>
+
+    <!-- Librería jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Tu JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

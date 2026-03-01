@@ -1,0 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4efe6; /* crema */
+    padding: 40px 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fffdf8;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto; /* centra horizontalmente */
+    padding: 50px;
+    border-radius: 10px;
+    border-top: 10px solid #6b0f1a; /* corinto */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #6b0f1a;
+    margin-bottom: 40px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #6b0f1a;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 2px solid #d9cfc2;
+    padding-bottom: 6px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4a3f35;
+}
+
+/* Inputs */
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #d9cfc2;
+    background-color: #fffdf8;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Focus */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6b0f1a;
+    box-shadow: 0 0 0 2px rgba(107, 15, 26, 0.15);
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #6b0f1a;
+    color: #fffdf8;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+button:hover {
+    background-color: #4e0b13;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+}
